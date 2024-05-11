@@ -1,14 +1,10 @@
-# react-take-home
+# SearchPilot Task
 
-React take home task for Sr. Frontend Dev role
+Thank you for considering my application for the role. Below are the instructions to get started with the SearchPilot Task project.
 
-Thank you for your application to SearchPilot! We greatly appreciate you taking the time to apply and your interest in working with us.
+## Project Overview
 
-We have created a take home task and thank you taking the time to complete SearchPilot take-home challenge for our senior frontend developer role.
-
-The task should hopefully not take too long. If you have any questions at all, please don’t hesitate to reach out to us.
-
-The goal of this take home task is to build out a product list and product form. Please clone this repository: https://github.com/SearchPilot/react-take-home
+The SearchPilot Task project is a web application built using React for the frontend and Express for the backend. It allows users to perform various actions related to product search and validation.
 
 ### Task
 
@@ -31,17 +27,51 @@ The goal of this take home task is to build out a product list and product form.
 - Ensure that the application is responsive and works on all devices
 - Write clean, maintainable code that adheres to best practices
 
-### Submission
+## Setup Instructions
 
-Please submit your completed task as a GitHub repository or a CodeSandbox. Include instructions on how to run your application and any additional notes or comments that you think are relevant.
+To run the project locally, follow these steps:
 
-### Design Mockup
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/filipesf/searchpilot.git
+   cd searchpilot
+   ```
 
-Product Detail Forms
+2. **Install Dependencies:**
+   Before running the project, you need to install the dependencies. To do this, run:
+   ```bash
+   yarn install
+   ```
+   The `yarn preinstall` script will make sure to install the dependencies for the client directory.
 
-![Product Detail Form](./Product-Detail-Form.png)
-![image](Product-Detail-Form-1.png)
+3. **Start the Server and Client:**
+   To start the server and client concurrently, run:
+   ```bash
+   yarn dev
+   ```
+   This command will start the server on `http://localhost:8080` and the client on `http://localhost:3000`.
 
-Product Details Pages:
+## Dependencies Used
 
-Feel free to design/style the list of products as you wish.
+- **React:** Used for building the user interface efficiently.
+- **React Router:** Chosen for its powerful routing capabilities, allowing for easy navigation between different views of the application.
+- **React Query:** Utilised for managing and caching asynchronous data, providing a seamless user experience with minimal loading times.
+- **Axios:** Used for making HTTP requests to the server, enabling communication between the frontend and backend.
+
+## Notes and Considerations
+
+- **Adjustments to `package.json` Scripts:** I have configured the `package.json` scripts to enable running both the server and the client with a single command (`yarn dev`). Additionally, a `preinstall` script is included to ensure the client's dependencies are installed before the main installation process.
+
+- **Choice of React Router and React Query:** React Router was selected for its declarative approach to routing, making it easier to define navigation rules within the application. React Query was chosen for its ability to manage server state and caching data, leading to improved performance and responsiveness.
+
+- **Styling Approach:** Although styled-components could have been implemented for more dynamic styling, CSS variables were deemed sufficient for this project's requirements.
+
+- **Handling Undefined Values:** I encountered an issue where `updatedProduct.name` was occasionally undefined when reaching the `validate` API. This inconsistency may be due to asynchronous state updates. Given more time, I would collaborate with team members to address this issue more effectively.
+
+- **Error Handling:** While error handling has been implemented, there is room for improvement to ensure a more robust and user-friendly experience. Enhancements could involve providing clearer error messages and handling edge cases more gracefully.
+
+- **Focused Efforts:** Despite the inevitable challenges encountered during the development process, I approached this project with a commitment to delivering a high-quality outcome. While I acknowledge that there may be a few oversights, I assure you that I dedicated my best efforts and attention to detail. My primary focus was on crafting a user experience (UX) that goes beyond mere functionality, striving to add genuine value with the limited information available on the products.
+
+- **Continuous Improvement:** I genuinely value the opportunity to receive feedback on my work. I believe that constructive criticism plays a crucial role in personal and professional growth. Therefore, I am open and receptive to any suggestions or insights that can help enhance the project further. Your feedback will not only aid in improving my skills but also contribute to the continual refinement of the project's overall quality.
+
+Thank you once again for the opportunity to showcase my skills. If you have any questions or feedback, please feel free to reach out. I look forward to the possibility of working together.

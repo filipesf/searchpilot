@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import 'assets/index.css';
 import reportWebVitals from './reportWebVitals';
+import { queryClient } from 'services/ProductService';
+import { QueryClientProvider } from 'react-query';
+import AppRouter from 'routes/AppRouter';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
 root.render(
   <React.StrictMode>
-    <App />
+    <QueryClientProvider client={queryClient} contextSharing={true}>
+      <AppRouter />
+    </QueryClientProvider>
   </React.StrictMode>
 );
 
